@@ -1,0 +1,692 @@
+The system is: Linux - 2.6.32-696.1.1.el6.x86_64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/3.14.4/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/3.14.4/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_dce05/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_dce05.dir/build.make CMakeFiles/cmTC_dce05.dir/build
+gmake[1]: Entering directory `/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dce05.dir/testCCompiler.c.o
+/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/gcc    -o CMakeFiles/cmTC_dce05.dir/testCCompiler.c.o   -c /home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_dce05
+/home/zhangyulei/softwares/cmake-3.14.4/install/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dce05.dir/link.txt --verbose=1
+/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/gcc      -rdynamic CMakeFiles/cmTC_dce05.dir/testCCompiler.c.o  -o cmTC_dce05 
+gmake[1]: Leaving directory `/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_a13a3/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_a13a3.dir/build.make CMakeFiles/cmTC_a13a3.dir/build
+gmake[1]: Entering directory `/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a13a3.dir/CMakeCCompilerABI.c.o
+/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/gcc   -v -o CMakeFiles/cmTC_a13a3.dir/CMakeCCompilerABI.c.o   -c /home/zhangyulei/softwares/cmake-3.14.4/install/share/cmake-3.14/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/gcc
+Target: x86_64-unknown-linux-gnu
+Configured with: /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/source/configure --prefix=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install --enable-languages=c,c++,fortran --disable-multilib
+Thread model: posix
+gcc version 4.9.4 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a13a3.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/cc1 -quiet -v /home/zhangyulei/softwares/cmake-3.14.4/install/share/cmake-3.14/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_a13a3.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccIR0v12.s
+GNU C (GCC) version 4.9.4 (x86_64-unknown-linux-gnu)
+	compiled by GNU C version 4.9.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../x86_64-unknown-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/intel/composer_xe_2013.3.163/mkl/include
+ /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/include
+ /usr/local/include
+ /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/include
+ /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/include-fixed
+ /usr/include
+End of search list.
+GNU C (GCC) version 4.9.4 (x86_64-unknown-linux-gnu)
+	compiled by GNU C version 4.9.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: da61a70e4e8ac02c1d961d603a2a5e14
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a13a3.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_a13a3.dir/CMakeCCompilerABI.c.o /tmp/ccIR0v12.s
+GNU assembler version 2.20.51.0.2 (x86_64-redhat-linux) using BFD version version 2.20.51.0.2-5.36.el6 20100205
+COMPILER_PATH=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/
+LIBRARY_PATH=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64/:/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64/:/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a13a3.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_a13a3
+/home/zhangyulei/softwares/cmake-3.14.4/install/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a13a3.dir/link.txt --verbose=1
+/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/gcc     -v -rdynamic CMakeFiles/cmTC_a13a3.dir/CMakeCCompilerABI.c.o  -o cmTC_a13a3 
+Using built-in specs.
+COLLECT_GCC=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/gcc
+COLLECT_LTO_WRAPPER=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/lto-wrapper
+Target: x86_64-unknown-linux-gnu
+Configured with: /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/source/configure --prefix=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install --enable-languages=c,c++,fortran --disable-multilib
+Thread model: posix
+gcc version 4.9.4 (GCC) 
+COMPILER_PATH=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/
+LIBRARY_PATH=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64/:/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64/:/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_a13a3' '-mtune=generic' '-march=x86-64'
+ /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/collect2 --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_a13a3 /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/crtbegin.o -L/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4 -L/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64 -L/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64 -L/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64 -L/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../.. CMakeFiles/cmTC_a13a3.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/crtend.o /usr/lib/../lib64/crtn.o
+gmake[1]: Leaving directory `/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/opt/intel/composer_xe_2013.3.163/mkl/include]
+    add: [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/include]
+    add: [/usr/local/include]
+    add: [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/include]
+    add: [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/include-fixed]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/opt/intel/composer_xe_2013.3.163/mkl/include] ==> [/opt/intel/composer_xe_2013.3.163/mkl/include]
+  collapse include dir [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/include] ==> [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/include] ==> [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/include]
+  collapse include dir [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/include-fixed] ==> [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/include-fixed]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/opt/intel/composer_xe_2013.3.163/mkl/include;/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/include;/usr/local/include;/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/include;/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/include-fixed;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_a13a3/fast ]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_a13a3.dir/build.make CMakeFiles/cmTC_a13a3.dir/build]
+  ignore line: [gmake[1]: Entering directory `/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_a13a3.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/gcc   -v -o CMakeFiles/cmTC_a13a3.dir/CMakeCCompilerABI.c.o   -c /home/zhangyulei/softwares/cmake-3.14.4/install/share/cmake-3.14/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/gcc]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Configured with: /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/source/configure --prefix=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install --enable-languages=c,c++,fortran --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.9.4 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a13a3.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/cc1 -quiet -v /home/zhangyulei/softwares/cmake-3.14.4/install/share/cmake-3.14/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_a13a3.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccIR0v12.s]
+  ignore line: [GNU C (GCC) version 4.9.4 (x86_64-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 4.9.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../x86_64-unknown-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/intel/composer_xe_2013.3.163/mkl/include]
+  ignore line: [ /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/include]
+  ignore line: [ /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/include-fixed]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C (GCC) version 4.9.4 (x86_64-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 4.9.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: da61a70e4e8ac02c1d961d603a2a5e14]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a13a3.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_a13a3.dir/CMakeCCompilerABI.c.o /tmp/ccIR0v12.s]
+  ignore line: [GNU assembler version 2.20.51.0.2 (x86_64-redhat-linux) using BFD version version 2.20.51.0.2-5.36.el6 20100205]
+  ignore line: [COMPILER_PATH=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64/:/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64/:/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a13a3.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_a13a3]
+  ignore line: [/home/zhangyulei/softwares/cmake-3.14.4/install/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a13a3.dir/link.txt --verbose=1]
+  ignore line: [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/gcc     -v -rdynamic CMakeFiles/cmTC_a13a3.dir/CMakeCCompilerABI.c.o  -o cmTC_a13a3 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/lto-wrapper]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Configured with: /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/source/configure --prefix=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install --enable-languages=c,c++,fortran --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.9.4 (GCC) ]
+  ignore line: [COMPILER_PATH=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64/:/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64/:/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_a13a3' '-mtune=generic' '-march=x86-64']
+  link line: [ /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/collect2 --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_a13a3 /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/crtbegin.o -L/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4 -L/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64 -L/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64 -L/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64 -L/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../.. CMakeFiles/cmTC_a13a3.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/crtend.o /usr/lib/../lib64/crtn.o]
+    arg [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/collect2] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_a13a3] ==> ignore
+    arg [/usr/lib/../lib64/crt1.o] ==> ignore
+    arg [/usr/lib/../lib64/crti.o] ==> ignore
+    arg [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/crtbegin.o] ==> ignore
+    arg [-L/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4] ==> dir [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4]
+    arg [-L/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../lib64] ==> dir [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64] ==> dir [/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64]
+    arg [-L/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64] ==> dir [/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64]
+    arg [-L/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64] ==> dir [/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64]
+    arg [-L/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../..] ==> dir [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../..]
+    arg [CMakeFiles/cmTC_a13a3.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/crtend.o] ==> ignore
+    arg [/usr/lib/../lib64/crtn.o] ==> ignore
+  collapse library dir [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4] ==> [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4]
+  collapse library dir [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../lib64] ==> [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64] ==> [/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64]
+  collapse library dir [/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64] ==> [/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64]
+  collapse library dir [/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64] ==> [/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64]
+  collapse library dir [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../..] ==> [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4;/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib64;/lib64;/usr/lib64;/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64;/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64;/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_af001/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_af001.dir/build.make CMakeFiles/cmTC_af001.dir/build
+gmake[1]: Entering directory `/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_af001.dir/feature_tests.c.o
+/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/gcc   -std=c11 -o CMakeFiles/cmTC_af001.dir/feature_tests.c.o   -c /home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_af001
+/home/zhangyulei/softwares/cmake-3.14.4/install/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af001.dir/link.txt --verbose=1
+/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/gcc      -rdynamic CMakeFiles/cmTC_af001.dir/feature_tests.c.o  -o cmTC_af001 
+gmake[1]: Leaving directory `/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_4565b/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_4565b.dir/build.make CMakeFiles/cmTC_4565b.dir/build
+gmake[1]: Entering directory `/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4565b.dir/feature_tests.c.o
+/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/gcc   -std=c99 -o CMakeFiles/cmTC_4565b.dir/feature_tests.c.o   -c /home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_4565b
+/home/zhangyulei/softwares/cmake-3.14.4/install/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4565b.dir/link.txt --verbose=1
+/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/gcc      -rdynamic CMakeFiles/cmTC_4565b.dir/feature_tests.c.o  -o cmTC_4565b 
+gmake[1]: Leaving directory `/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_29fbb/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_29fbb.dir/build.make CMakeFiles/cmTC_29fbb.dir/build
+gmake[1]: Entering directory `/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_29fbb.dir/feature_tests.c.o
+/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/gcc   -std=c90 -o CMakeFiles/cmTC_29fbb.dir/feature_tests.c.o   -c /home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_29fbb
+/home/zhangyulei/softwares/cmake-3.14.4/install/bin/cmake -E cmake_link_script CMakeFiles/cmTC_29fbb.dir/link.txt --verbose=1
+/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/gcc      -rdynamic CMakeFiles/cmTC_29fbb.dir/feature_tests.c.o  -o cmTC_29fbb 
+gmake[1]: Leaving directory `/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_093c7/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_093c7.dir/build.make CMakeFiles/cmTC_093c7.dir/build
+gmake[1]: Entering directory `/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_093c7.dir/testCXXCompiler.cxx.o
+/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/g++     -o CMakeFiles/cmTC_093c7.dir/testCXXCompiler.cxx.o -c /home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_093c7
+/home/zhangyulei/softwares/cmake-3.14.4/install/bin/cmake -E cmake_link_script CMakeFiles/cmTC_093c7.dir/link.txt --verbose=1
+/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/g++       -rdynamic CMakeFiles/cmTC_093c7.dir/testCXXCompiler.cxx.o  -o cmTC_093c7 
+gmake[1]: Leaving directory `/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_78553/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_78553.dir/build.make CMakeFiles/cmTC_78553.dir/build
+gmake[1]: Entering directory `/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_78553.dir/CMakeCXXCompilerABI.cpp.o
+/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/g++    -v -o CMakeFiles/cmTC_78553.dir/CMakeCXXCompilerABI.cpp.o -c /home/zhangyulei/softwares/cmake-3.14.4/install/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/g++
+Target: x86_64-unknown-linux-gnu
+Configured with: /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/source/configure --prefix=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install --enable-languages=c,c++,fortran --disable-multilib
+Thread model: posix
+gcc version 4.9.4 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_78553.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/cc1plus -quiet -v -D_GNU_SOURCE /home/zhangyulei/softwares/cmake-3.14.4/install/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_78553.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccP3KQj4.s
+GNU C++ (GCC) version 4.9.4 (x86_64-unknown-linux-gnu)
+	compiled by GNU C version 4.9.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../x86_64-unknown-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/intel/composer_xe_2013.3.163/mkl/include
+ /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../include/c++/4.9.4
+ /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../include/c++/4.9.4/x86_64-unknown-linux-gnu
+ /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../include/c++/4.9.4/backward
+ /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/include
+ /usr/local/include
+ /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/include
+ /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/include-fixed
+ /usr/include
+End of search list.
+GNU C++ (GCC) version 4.9.4 (x86_64-unknown-linux-gnu)
+	compiled by GNU C version 4.9.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: e0fc6cc8d0c63cd56aec20b37762cbf1
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_78553.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_78553.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccP3KQj4.s
+GNU assembler version 2.20.51.0.2 (x86_64-redhat-linux) using BFD version version 2.20.51.0.2-5.36.el6 20100205
+COMPILER_PATH=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/
+LIBRARY_PATH=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64/:/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64/:/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_78553.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_78553
+/home/zhangyulei/softwares/cmake-3.14.4/install/bin/cmake -E cmake_link_script CMakeFiles/cmTC_78553.dir/link.txt --verbose=1
+/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/g++      -v -rdynamic CMakeFiles/cmTC_78553.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_78553 
+Using built-in specs.
+COLLECT_GCC=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/g++
+COLLECT_LTO_WRAPPER=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/lto-wrapper
+Target: x86_64-unknown-linux-gnu
+Configured with: /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/source/configure --prefix=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install --enable-languages=c,c++,fortran --disable-multilib
+Thread model: posix
+gcc version 4.9.4 (GCC) 
+COMPILER_PATH=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/
+LIBRARY_PATH=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64/:/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64/:/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_78553' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/collect2 --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_78553 /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/crtbegin.o -L/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4 -L/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64 -L/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64 -L/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64 -L/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../.. CMakeFiles/cmTC_78553.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/crtend.o /usr/lib/../lib64/crtn.o
+gmake[1]: Leaving directory `/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/opt/intel/composer_xe_2013.3.163/mkl/include]
+    add: [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../include/c++/4.9.4]
+    add: [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../include/c++/4.9.4/x86_64-unknown-linux-gnu]
+    add: [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../include/c++/4.9.4/backward]
+    add: [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/include]
+    add: [/usr/local/include]
+    add: [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/include]
+    add: [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/include-fixed]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/opt/intel/composer_xe_2013.3.163/mkl/include] ==> [/opt/intel/composer_xe_2013.3.163/mkl/include]
+  collapse include dir [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../include/c++/4.9.4] ==> [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/include/c++/4.9.4]
+  collapse include dir [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../include/c++/4.9.4/x86_64-unknown-linux-gnu] ==> [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/include/c++/4.9.4/x86_64-unknown-linux-gnu]
+  collapse include dir [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../include/c++/4.9.4/backward] ==> [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/include/c++/4.9.4/backward]
+  collapse include dir [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/include] ==> [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/include] ==> [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/include]
+  collapse include dir [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/include-fixed] ==> [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/include-fixed]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/opt/intel/composer_xe_2013.3.163/mkl/include;/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/include/c++/4.9.4;/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/include/c++/4.9.4/x86_64-unknown-linux-gnu;/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/include/c++/4.9.4/backward;/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/include;/usr/local/include;/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/include;/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/include-fixed;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_78553/fast ]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_78553.dir/build.make CMakeFiles/cmTC_78553.dir/build]
+  ignore line: [gmake[1]: Entering directory `/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_78553.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/g++    -v -o CMakeFiles/cmTC_78553.dir/CMakeCXXCompilerABI.cpp.o -c /home/zhangyulei/softwares/cmake-3.14.4/install/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/g++]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Configured with: /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/source/configure --prefix=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install --enable-languages=c,c++,fortran --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.9.4 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_78553.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/cc1plus -quiet -v -D_GNU_SOURCE /home/zhangyulei/softwares/cmake-3.14.4/install/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_78553.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccP3KQj4.s]
+  ignore line: [GNU C++ (GCC) version 4.9.4 (x86_64-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 4.9.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../x86_64-unknown-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/intel/composer_xe_2013.3.163/mkl/include]
+  ignore line: [ /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../include/c++/4.9.4]
+  ignore line: [ /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../include/c++/4.9.4/x86_64-unknown-linux-gnu]
+  ignore line: [ /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../include/c++/4.9.4/backward]
+  ignore line: [ /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/include]
+  ignore line: [ /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/include-fixed]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++ (GCC) version 4.9.4 (x86_64-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 4.9.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: e0fc6cc8d0c63cd56aec20b37762cbf1]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_78553.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_78553.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccP3KQj4.s]
+  ignore line: [GNU assembler version 2.20.51.0.2 (x86_64-redhat-linux) using BFD version version 2.20.51.0.2-5.36.el6 20100205]
+  ignore line: [COMPILER_PATH=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64/:/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64/:/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_78553.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_78553]
+  ignore line: [/home/zhangyulei/softwares/cmake-3.14.4/install/bin/cmake -E cmake_link_script CMakeFiles/cmTC_78553.dir/link.txt --verbose=1]
+  ignore line: [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/g++      -v -rdynamic CMakeFiles/cmTC_78553.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_78553 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/lto-wrapper]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Configured with: /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/source/configure --prefix=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install --enable-languages=c,c++,fortran --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.9.4 (GCC) ]
+  ignore line: [COMPILER_PATH=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64/:/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64/:/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/:/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_78553' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/collect2 --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_78553 /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/crtbegin.o -L/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4 -L/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64 -L/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64 -L/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64 -L/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../.. CMakeFiles/cmTC_78553.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/crtend.o /usr/lib/../lib64/crtn.o]
+    arg [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/collect2] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_78553] ==> ignore
+    arg [/usr/lib/../lib64/crt1.o] ==> ignore
+    arg [/usr/lib/../lib64/crti.o] ==> ignore
+    arg [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/crtbegin.o] ==> ignore
+    arg [-L/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4] ==> dir [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4]
+    arg [-L/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../lib64] ==> dir [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64] ==> dir [/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64]
+    arg [-L/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64] ==> dir [/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64]
+    arg [-L/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64] ==> dir [/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64]
+    arg [-L/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../..] ==> dir [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../..]
+    arg [CMakeFiles/cmTC_78553.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/crtend.o] ==> ignore
+    arg [/usr/lib/../lib64/crtn.o] ==> ignore
+  collapse library dir [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4] ==> [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4]
+  collapse library dir [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../../../lib64] ==> [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64] ==> [/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64]
+  collapse library dir [/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64] ==> [/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64]
+  collapse library dir [/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64] ==> [/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64]
+  collapse library dir [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/../../..] ==> [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib/gcc/x86_64-unknown-linux-gnu/4.9.4;/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib64;/lib64;/usr/lib64;/opt/intel/composer_xe_2013.3.163/compiler/lib/intel64;/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64;/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: /home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_5bed0/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_5bed0.dir/build.make CMakeFiles/cmTC_5bed0.dir/build
+gmake[1]: Entering directory `/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5bed0.dir/feature_tests.cxx.o
+/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/g++    -std=c++14 -o CMakeFiles/cmTC_5bed0.dir/feature_tests.cxx.o -c /home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_5bed0
+/home/zhangyulei/softwares/cmake-3.14.4/install/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5bed0.dir/link.txt --verbose=1
+/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/g++       -rdynamic CMakeFiles/cmTC_5bed0.dir/feature_tests.cxx.o  -o cmTC_5bed0 
+gmake[1]: Leaving directory `/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_5a7d8/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_5a7d8.dir/build.make CMakeFiles/cmTC_5a7d8.dir/build
+gmake[1]: Entering directory `/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5a7d8.dir/feature_tests.cxx.o
+/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/g++    -std=c++11 -o CMakeFiles/cmTC_5a7d8.dir/feature_tests.cxx.o -c /home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_5a7d8
+/home/zhangyulei/softwares/cmake-3.14.4/install/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a7d8.dir/link.txt --verbose=1
+/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/g++       -rdynamic CMakeFiles/cmTC_5a7d8.dir/feature_tests.cxx.o  -o cmTC_5a7d8 
+gmake[1]: Leaving directory `/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_36505/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_36505.dir/build.make CMakeFiles/cmTC_36505.dir/build
+gmake[1]: Entering directory `/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_36505.dir/feature_tests.cxx.o
+/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/g++    -std=c++98 -o CMakeFiles/cmTC_36505.dir/feature_tests.cxx.o -c /home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_36505
+/home/zhangyulei/softwares/cmake-3.14.4/install/bin/cmake -E cmake_link_script CMakeFiles/cmTC_36505.dir/link.txt --verbose=1
+/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/g++       -rdynamic CMakeFiles/cmTC_36505.dir/feature_tests.cxx.o  -o cmTC_36505 
+gmake[1]: Leaving directory `/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates
