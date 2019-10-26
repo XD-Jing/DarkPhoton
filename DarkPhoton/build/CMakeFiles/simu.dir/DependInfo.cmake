@@ -23,6 +23,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/lijing/DarkPhoton/DarkPhoton/Root/PrimaryGeneratorMessenger.cc" "/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/simu.dir/Root/PrimaryGeneratorMessenger.cc.o"
   "/home/lijing/DarkPhoton/DarkPhoton/Root/RootManager.cc" "/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/simu.dir/Root/RootManager.cc.o"
   "/home/lijing/DarkPhoton/DarkPhoton/Root/RunAction.cc" "/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/simu.dir/Root/RunAction.cc.o"
+  "/home/lijing/DarkPhoton/DarkPhoton/Root/SlimROOT.cc" "/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/simu.dir/Root/SlimROOT.cc.o"
   "/home/lijing/DarkPhoton/DarkPhoton/Root/SteppingAction.cc" "/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/simu.dir/Root/SteppingAction.cc.o"
   "/home/lijing/DarkPhoton/DarkPhoton/Root/TrackerHit.cc" "/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/simu.dir/Root/TrackerHit.cc.o"
   "/home/lijing/DarkPhoton/DarkPhoton/Root/TrackerSD.cc" "/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/simu.dir/Root/TrackerSD.cc.o"

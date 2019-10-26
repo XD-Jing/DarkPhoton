@@ -317,9 +317,22 @@ CMakeFiles/simu.dir/Root/RunAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simu.dir/Root/RunAction.cc.s"
 	/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lijing/DarkPhoton/DarkPhoton/Root/RunAction.cc -o CMakeFiles/simu.dir/Root/RunAction.cc.s
 
+CMakeFiles/simu.dir/Root/SlimROOT.cc.o: CMakeFiles/simu.dir/flags.make
+CMakeFiles/simu.dir/Root/SlimROOT.cc.o: ../Root/SlimROOT.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/simu.dir/Root/SlimROOT.cc.o"
+	/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simu.dir/Root/SlimROOT.cc.o -c /home/lijing/DarkPhoton/DarkPhoton/Root/SlimROOT.cc
+
+CMakeFiles/simu.dir/Root/SlimROOT.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simu.dir/Root/SlimROOT.cc.i"
+	/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lijing/DarkPhoton/DarkPhoton/Root/SlimROOT.cc > CMakeFiles/simu.dir/Root/SlimROOT.cc.i
+
+CMakeFiles/simu.dir/Root/SlimROOT.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simu.dir/Root/SlimROOT.cc.s"
+	/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lijing/DarkPhoton/DarkPhoton/Root/SlimROOT.cc -o CMakeFiles/simu.dir/Root/SlimROOT.cc.s
+
 CMakeFiles/simu.dir/Root/SteppingAction.cc.o: CMakeFiles/simu.dir/flags.make
 CMakeFiles/simu.dir/Root/SteppingAction.cc.o: ../Root/SteppingAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/simu.dir/Root/SteppingAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/simu.dir/Root/SteppingAction.cc.o"
 	/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simu.dir/Root/SteppingAction.cc.o -c /home/lijing/DarkPhoton/DarkPhoton/Root/SteppingAction.cc
 
 CMakeFiles/simu.dir/Root/SteppingAction.cc.i: cmake_force
@@ -332,7 +345,7 @@ CMakeFiles/simu.dir/Root/SteppingAction.cc.s: cmake_force
 
 CMakeFiles/simu.dir/Root/TrackerHit.cc.o: CMakeFiles/simu.dir/flags.make
 CMakeFiles/simu.dir/Root/TrackerHit.cc.o: ../Root/TrackerHit.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/simu.dir/Root/TrackerHit.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/simu.dir/Root/TrackerHit.cc.o"
 	/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simu.dir/Root/TrackerHit.cc.o -c /home/lijing/DarkPhoton/DarkPhoton/Root/TrackerHit.cc
 
 CMakeFiles/simu.dir/Root/TrackerHit.cc.i: cmake_force
@@ -345,7 +358,7 @@ CMakeFiles/simu.dir/Root/TrackerHit.cc.s: cmake_force
 
 CMakeFiles/simu.dir/Root/TrackerSD.cc.o: CMakeFiles/simu.dir/flags.make
 CMakeFiles/simu.dir/Root/TrackerSD.cc.o: ../Root/TrackerSD.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/simu.dir/Root/TrackerSD.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/simu.dir/Root/TrackerSD.cc.o"
 	/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simu.dir/Root/TrackerSD.cc.o -c /home/lijing/DarkPhoton/DarkPhoton/Root/TrackerSD.cc
 
 CMakeFiles/simu.dir/Root/TrackerSD.cc.i: cmake_force
@@ -358,7 +371,7 @@ CMakeFiles/simu.dir/Root/TrackerSD.cc.s: cmake_force
 
 CMakeFiles/simu.dir/Root/TrackingAction.cc.o: CMakeFiles/simu.dir/flags.make
 CMakeFiles/simu.dir/Root/TrackingAction.cc.o: ../Root/TrackingAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/simu.dir/Root/TrackingAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/simu.dir/Root/TrackingAction.cc.o"
 	/home/zhangyulei/softwares/CEPC/cepcsoft/x86_64-sl6-gcc49/external/GCC/4.9.4/install/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simu.dir/Root/TrackingAction.cc.o -c /home/lijing/DarkPhoton/DarkPhoton/Root/TrackingAction.cc
 
 CMakeFiles/simu.dir/Root/TrackingAction.cc.i: cmake_force
@@ -391,6 +404,7 @@ simu_OBJECTS = \
 "CMakeFiles/simu.dir/Root/PrimaryGeneratorMessenger.cc.o" \
 "CMakeFiles/simu.dir/Root/RootManager.cc.o" \
 "CMakeFiles/simu.dir/Root/RunAction.cc.o" \
+"CMakeFiles/simu.dir/Root/SlimROOT.cc.o" \
 "CMakeFiles/simu.dir/Root/SteppingAction.cc.o" \
 "CMakeFiles/simu.dir/Root/TrackerHit.cc.o" \
 "CMakeFiles/simu.dir/Root/TrackerSD.cc.o" \
@@ -419,6 +433,7 @@ simu: CMakeFiles/simu.dir/Root/PrimaryGeneratorAction.cc.o
 simu: CMakeFiles/simu.dir/Root/PrimaryGeneratorMessenger.cc.o
 simu: CMakeFiles/simu.dir/Root/RootManager.cc.o
 simu: CMakeFiles/simu.dir/Root/RunAction.cc.o
+simu: CMakeFiles/simu.dir/Root/SlimROOT.cc.o
 simu: CMakeFiles/simu.dir/Root/SteppingAction.cc.o
 simu: CMakeFiles/simu.dir/Root/TrackerHit.cc.o
 simu: CMakeFiles/simu.dir/Root/TrackerSD.cc.o
@@ -488,7 +503,7 @@ simu: /home/zhangyulei/softwares/Geant4-10.05/install/lib64/libG4intercoms.so
 simu: /home/zhangyulei/softwares/Geant4-10.05/install/lib64/libG4global.so
 simu: /home/zhangyulei/softwares/Geant4-10.05/install/lib64/libG4clhep.so
 simu: CMakeFiles/simu.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable simu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable simu"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/simu.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

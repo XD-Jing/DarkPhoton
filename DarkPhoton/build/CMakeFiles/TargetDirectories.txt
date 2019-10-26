@@ -4,4 +4,5 @@
 /home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/list_install_components.dir
 /home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/rebuild_cache.dir
 /home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/edit_cache.dir
+/home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/SlimROOT.dir
 /home/lijing/DarkPhoton/DarkPhoton/build/CMakeFiles/simu.dir

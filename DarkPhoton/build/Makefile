@@ -157,6 +157,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named SlimROOT
+
+# Build rule for target.
+SlimROOT: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SlimROOT
+.PHONY : SlimROOT
+
+# fast build rule for target.
+SlimROOT/fast:
+	$(MAKE) -f CMakeFiles/SlimROOT.dir/build.make CMakeFiles/SlimROOT.dir/build
+.PHONY : SlimROOT/fast
+
+#=============================================================================
 # Target rules for targets named simu
 
 # Build rule for target.
@@ -682,6 +695,36 @@ Root/RunAction.cc.s:
 	$(MAKE) -f CMakeFiles/simu.dir/build.make CMakeFiles/simu.dir/Root/RunAction.cc.s
 .PHONY : Root/RunAction.cc.s
 
+Root/SlimROOT.o: Root/SlimROOT.cc.o
+
+.PHONY : Root/SlimROOT.o
+
+# target to build an object file
+Root/SlimROOT.cc.o:
+	$(MAKE) -f CMakeFiles/SlimROOT.dir/build.make CMakeFiles/SlimROOT.dir/Root/SlimROOT.cc.o
+	$(MAKE) -f CMakeFiles/simu.dir/build.make CMakeFiles/simu.dir/Root/SlimROOT.cc.o
+.PHONY : Root/SlimROOT.cc.o
+
+Root/SlimROOT.i: Root/SlimROOT.cc.i
+
+.PHONY : Root/SlimROOT.i
+
+# target to preprocess a source file
+Root/SlimROOT.cc.i:
+	$(MAKE) -f CMakeFiles/SlimROOT.dir/build.make CMakeFiles/SlimROOT.dir/Root/SlimROOT.cc.i
+	$(MAKE) -f CMakeFiles/simu.dir/build.make CMakeFiles/simu.dir/Root/SlimROOT.cc.i
+.PHONY : Root/SlimROOT.cc.i
+
+Root/SlimROOT.s: Root/SlimROOT.cc.s
+
+.PHONY : Root/SlimROOT.s
+
+# target to generate assembly for a file
+Root/SlimROOT.cc.s:
+	$(MAKE) -f CMakeFiles/SlimROOT.dir/build.make CMakeFiles/SlimROOT.dir/Root/SlimROOT.cc.s
+	$(MAKE) -f CMakeFiles/simu.dir/build.make CMakeFiles/simu.dir/Root/SlimROOT.cc.s
+.PHONY : Root/SlimROOT.cc.s
+
 Root/SteppingAction.o: Root/SteppingAction.cc.o
 
 .PHONY : Root/SteppingAction.o
@@ -790,6 +833,33 @@ Root/TrackingAction.cc.s:
 	$(MAKE) -f CMakeFiles/simu.dir/build.make CMakeFiles/simu.dir/Root/TrackingAction.cc.s
 .PHONY : Root/TrackingAction.cc.s
 
+utils/SlimROOT.o: utils/SlimROOT.cc.o
+
+.PHONY : utils/SlimROOT.o
+
+# target to build an object file
+utils/SlimROOT.cc.o:
+	$(MAKE) -f CMakeFiles/SlimROOT.dir/build.make CMakeFiles/SlimROOT.dir/utils/SlimROOT.cc.o
+.PHONY : utils/SlimROOT.cc.o
+
+utils/SlimROOT.i: utils/SlimROOT.cc.i
+
+.PHONY : utils/SlimROOT.i
+
+# target to preprocess a source file
+utils/SlimROOT.cc.i:
+	$(MAKE) -f CMakeFiles/SlimROOT.dir/build.make CMakeFiles/SlimROOT.dir/utils/SlimROOT.cc.i
+.PHONY : utils/SlimROOT.cc.i
+
+utils/SlimROOT.s: utils/SlimROOT.cc.s
+
+.PHONY : utils/SlimROOT.s
+
+# target to generate assembly for a file
+utils/SlimROOT.cc.s:
+	$(MAKE) -f CMakeFiles/SlimROOT.dir/build.make CMakeFiles/SlimROOT.dir/utils/SlimROOT.cc.s
+.PHONY : utils/SlimROOT.cc.s
+
 utils/simu.o: utils/simu.cc.o
 
 .PHONY : utils/simu.o
@@ -829,6 +899,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... SlimROOT"
 	@echo "... simu"
 	@echo "... Root/CalorHit.o"
 	@echo "... Root/CalorHit.i"
@@ -887,6 +958,9 @@ help:
 	@echo "... Root/RunAction.o"
 	@echo "... Root/RunAction.i"
 	@echo "... Root/RunAction.s"
+	@echo "... Root/SlimROOT.o"
+	@echo "... Root/SlimROOT.i"
+	@echo "... Root/SlimROOT.s"
 	@echo "... Root/SteppingAction.o"
 	@echo "... Root/SteppingAction.i"
 	@echo "... Root/SteppingAction.s"
@@ -899,6 +973,9 @@ help:
 	@echo "... Root/TrackingAction.o"
 	@echo "... Root/TrackingAction.i"
 	@echo "... Root/TrackingAction.s"
+	@echo "... utils/SlimROOT.o"
+	@echo "... utils/SlimROOT.i"
+	@echo "... utils/SlimROOT.s"
 	@echo "... utils/simu.o"
 	@echo "... utils/simu.i"
 	@echo "... utils/simu.s"

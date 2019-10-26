@@ -19,6 +19,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/simu.dir/Root/PrimaryGeneratorMessenger.cc.o"
   "CMakeFiles/simu.dir/Root/RootManager.cc.o"
   "CMakeFiles/simu.dir/Root/RunAction.cc.o"
+  "CMakeFiles/simu.dir/Root/SlimROOT.cc.o"
   "CMakeFiles/simu.dir/Root/SteppingAction.cc.o"
   "CMakeFiles/simu.dir/Root/TrackerHit.cc.o"
   "CMakeFiles/simu.dir/Root/TrackerSD.cc.o"

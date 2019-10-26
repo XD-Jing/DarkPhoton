@@ -68,9 +68,10 @@ file(GLOB headers ${PROJECT_SOURCE_DIR}/DarkPhoton/*.hh)
 # Add the executable, and link it to the Geant4 libraries
 #
 add_executable(simu utils/simu.cc ${sources} ${headers})
-#target_link_libraries(DP_simu ${Geant4_LIBRARIES}
-#                      ${HEPMC_LIBRARIES} ${HEPMC_FIO_LIBRARIES}
-#                      ${PYTHIA6_LIBRARIES} gfortran)
+add_executable(SlimROOT utils/SlimROOT.cc
+    ${PROJECT_SOURCE_DIR}/DarkPhoton/SlimROOT.hh
+    ${PROJECT_SOURCE_DIR}/Root/SlimROOT.cc)
+
 target_link_libraries(simu ${Geant4_LIBRARIES}
                       ${HEPMC_LIBRARIES} ${HEPMC_FIO_LIBRARIES}
                       ${PYTHIA6_LIBRARIES})
@@ -105,5 +106,5 @@ endforeach()
 #----------------------------------------------------------------------------
 # Install the executable to 'bin' directory under CMAKE_INSTALL_PREFIX
 #
-install(TARGETS simu DESTINATION bin)
+install(TARGETS simu  SlimROOT DESTINATION bin)
 

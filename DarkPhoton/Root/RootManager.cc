@@ -166,7 +166,7 @@ void RootManager::book(G4String fileName)
     tr->Branch("rTrkPosY",       &rTrkPosY  ,   "rTrkPosY[Nb_recTrk]/D");
     tr->Branch("rTrkPosZ",       &rTrkPosZ  ,   "rTrkPosZ[Nb_recTrk]/D");
 
-    tr->Branch("Nb_ECal",       &Nb_ECal    ,   "Nb_ECal/I");
+    tr->Branch("Nb_ECal",        &Nb_ECal   ,   "Nb_ECal/I");
     tr->Branch("ECalE",          &ECalE     ,   "ECalE[Nb_ECal]/D");
     tr->Branch("ECalTime",       &ECalTime  ,   "ECalTime[Nb_ECal]/D");
     tr->Branch("ECalPosX",       &ECalPosX  ,   "ECalPosX[Nb_ECal]/D");
