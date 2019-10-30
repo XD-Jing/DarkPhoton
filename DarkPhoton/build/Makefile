@@ -170,6 +170,19 @@ SlimROOT/fast:
 .PHONY : SlimROOT/fast
 
 #=============================================================================
+# Target rules for targets named Plots
+
+# Build rule for target.
+Plots: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Plots
+.PHONY : Plots
+
+# fast build rule for target.
+Plots/fast:
+	$(MAKE) -f CMakeFiles/Plots.dir/build.make CMakeFiles/Plots.dir/build
+.PHONY : Plots/fast
+
+#=============================================================================
 # Target rules for targets named simu
 
 # Build rule for target.
@@ -833,6 +846,33 @@ Root/TrackingAction.cc.s:
 	$(MAKE) -f CMakeFiles/simu.dir/build.make CMakeFiles/simu.dir/Root/TrackingAction.cc.s
 .PHONY : Root/TrackingAction.cc.s
 
+utils/Plots.o: utils/Plots.cc.o
+
+.PHONY : utils/Plots.o
+
+# target to build an object file
+utils/Plots.cc.o:
+	$(MAKE) -f CMakeFiles/Plots.dir/build.make CMakeFiles/Plots.dir/utils/Plots.cc.o
+.PHONY : utils/Plots.cc.o
+
+utils/Plots.i: utils/Plots.cc.i
+
+.PHONY : utils/Plots.i
+
+# target to preprocess a source file
+utils/Plots.cc.i:
+	$(MAKE) -f CMakeFiles/Plots.dir/build.make CMakeFiles/Plots.dir/utils/Plots.cc.i
+.PHONY : utils/Plots.cc.i
+
+utils/Plots.s: utils/Plots.cc.s
+
+.PHONY : utils/Plots.s
+
+# target to generate assembly for a file
+utils/Plots.cc.s:
+	$(MAKE) -f CMakeFiles/Plots.dir/build.make CMakeFiles/Plots.dir/utils/Plots.cc.s
+.PHONY : utils/Plots.cc.s
+
 utils/SlimROOT.o: utils/SlimROOT.cc.o
 
 .PHONY : utils/SlimROOT.o
@@ -900,6 +940,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... SlimROOT"
+	@echo "... Plots"
 	@echo "... simu"
 	@echo "... Root/CalorHit.o"
 	@echo "... Root/CalorHit.i"
@@ -973,6 +1014,9 @@ help:
 	@echo "... Root/TrackingAction.o"
 	@echo "... Root/TrackingAction.i"
 	@echo "... Root/TrackingAction.s"
+	@echo "... utils/Plots.o"
+	@echo "... utils/Plots.i"
+	@echo "... utils/Plots.s"
 	@echo "... utils/SlimROOT.o"
 	@echo "... utils/SlimROOT.i"
 	@echo "... utils/SlimROOT.s"

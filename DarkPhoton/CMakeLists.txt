@@ -3,9 +3,9 @@
 cmake_minimum_required(VERSION 2.6 FATAL_ERROR)
 project(DarkPhoton)
 
-if ( CMAKE_COMPILER_IS_GNUCC )
+#if ( CMAKE_COMPILER_IS_GNUCC )
     set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -w")
-endif()
+    #endif()
 
 
 #----------------------------------------------------------------------------
@@ -68,6 +68,7 @@ file(GLOB headers ${PROJECT_SOURCE_DIR}/DarkPhoton/*.hh)
 # Add the executable, and link it to the Geant4 libraries
 #
 add_executable(simu utils/simu.cc ${sources} ${headers})
+add_executable(Plots utils/Plots.cc)
 add_executable(SlimROOT utils/SlimROOT.cc
     ${PROJECT_SOURCE_DIR}/DarkPhoton/SlimROOT.hh
     ${PROJECT_SOURCE_DIR}/Root/SlimROOT.cc)

@@ -1,10 +1,3 @@
-//////////////////////////////////////////////////////////
-// This class has been automatically generated on
-// Thu Sep  5 15:35:14 2019 by ROOT version 6.14/06
-// from TTree Dark_Photon/Dark_Photon
-// found on file: dp_2.root
-//////////////////////////////////////////////////////////
-
 #ifndef SlimROOT_h
 #define SlimROOT_h
 

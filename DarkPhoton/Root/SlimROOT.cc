@@ -5,6 +5,8 @@
 #include <TStyle.h>
 #include <TCanvas.h>
 #include "TRandom3.h"
+#include <map>
+#include <vector>
 
 const bool scan = false;
 const int scan_Evt = 492090;
@@ -30,6 +32,14 @@ void SlimROOT::Loop()
     Double_t    _Pi[5]      ;
     Double_t    _Pf[4]      ;
     Double_t    _ECalE      ;
+    //Double_t    _ECalE_0    ;
+    Double_t    _ECalE_0p1MeV;
+    Double_t    _ECalE_0p5MeV;
+    Double_t    _ECalE_1MeV ;
+    Double_t    _ECalE_2MeV ;
+    Double_t    _ECalE_3MeV ;
+    Double_t    _ECalE_4MeV ;
+    Double_t    _ECalE_5MeV ;
     Int_t       _Nb_ECal    ;
     Double_t    _ECalPosV[3]; // the variance along x,y,z respectively
     Double_t    _ECalPosX[1500];
@@ -42,6 +52,14 @@ void SlimROOT::Loop()
     tout->Branch("Pf"           , &_Pf          , "Pf[4]/D")  ;
     tout->Branch("Rndm"         , &_Rndm        , "Rndm[4]/D") ;
     tout->Branch("ECalE"        , &_ECalE       , "ECalE/D")        ;
+    //tout->Branch("ECalE0"        , &_ECalE_0       , "ECalE0/D")        ;
+    tout->Branch("ECalE0p1"     , &_ECalE_0p1MeV, "ECalE_0p1MeV/D")        ;
+    tout->Branch("ECalE0p5"     , &_ECalE_0p5MeV, "ECalE_0p5MeV/D")        ;
+    tout->Branch("ECalE1"       , &_ECalE_1MeV  , "ECalE_1MeV/D")        ;
+    tout->Branch("ECalE2"       , &_ECalE_2MeV  , "ECalE_2MeV/D")        ;
+    tout->Branch("ECalE3"       , &_ECalE_3MeV  , "ECalE_3MeV/D")        ;
+    tout->Branch("ECalE4"       , &_ECalE_4MeV  , "ECalE_4MeV/D")        ;
+    tout->Branch("ECalE5"       , &_ECalE_5MeV  , "ECalE_5MeV/D")        ;
     tout->Branch("Nb_ECal"      , &_Nb_ECal     , "Nb_ECal/I")        ;
     tout->Branch("ECalPosV"     , &_ECalPosV    , "ECalPosV[3]/D")  ;
     tout->Branch("ECalPosX"     , &_ECalPosX    , "ECalPosX[Nb_ECal]/D")  ;
@@ -127,6 +145,11 @@ void SlimROOT::Loop()
         TH1D *hpx = new TH1D("hpx","hpx",100,-500.,500.);
         TH1D *hpy = new TH1D("hpy","hpy",100,-500.,500.);
         TH1D *hpz = new TH1D("hpz","hpz",100,0., 440.);
+        
+        std::vector <std::string> Cuts = { "noCut", "At0.1MeV", "At0.5MeV", "At1MeV", "At2MeV", "At3MeV", "At4MeV", "At5MeV" };
+        std::map <std::string, TH1D> Histograms;
+        Histograms.clear();
+        for (auto cut : Cuts) Histograms[cut] = TH1D(cut.c_str(), cut.c_str(), 80000, 0., 8000.);
 
         _Nb_ECal = Nb_ECal;
         for(int i=0; i<Nb_ECal; i++) {
@@ -140,6 +163,15 @@ void SlimROOT::Loop()
             _ECalPosX[i] = ECalPosX[i];
             _ECalPosY[i] = ECalPosY[i];
 
+            if (Er>=5) Histograms["At5MeV"].Fill(Er);
+            if (Er>=4) Histograms["At4MeV"].Fill(Er);
+            if (Er>=3) Histograms["At3MeV"].Fill(Er);
+            if (Er>=2) Histograms["At2MeV"].Fill(Er);
+            if (Er>=1) Histograms["At1MeV"].Fill(Er);
+            if (Er>=0.5) Histograms["At0.5MeV"].Fill(Er);
+            if (Er>=0.1) Histograms["At0.1MeV"].Fill(Er);
+            if (Er>=0) Histograms["noCut"].Fill(Er);
+
         }
 
         Double_t TotalEnergy = hE->GetMean() * hE->GetEntries() * ECal_coeff;
@@ -152,7 +184,16 @@ void SlimROOT::Loop()
         delete hpy;
         delete hpz;
         
-        _ECalE = TotalEnergy;
+        //_ECalE_0 = TotalEnergy;
+        _ECalE = Histograms["noCut"].GetMean() * Histograms["noCut"].GetEntries() * ECal_coeff;
+        _ECalE_0p1MeV = Histograms["At0.1MeV"].GetMean() * Histograms["At0.1MeV"].GetEntries() * ECal_coeff;
+        _ECalE_0p5MeV = Histograms["At0.5MeV"].GetMean() * Histograms["At0.5MeV"].GetEntries() * ECal_coeff;
+        _ECalE_1MeV = Histograms["At1MeV"].GetMean() * Histograms["At1MeV"].GetEntries() * ECal_coeff;
+        _ECalE_2MeV = Histograms["At2MeV"].GetMean() * Histograms["At2MeV"].GetEntries() * ECal_coeff;
+        _ECalE_3MeV = Histograms["At3MeV"].GetMean() * Histograms["At3MeV"].GetEntries() * ECal_coeff;
+        _ECalE_4MeV = Histograms["At4MeV"].GetMean() * Histograms["At4MeV"].GetEntries() * ECal_coeff;
+        _ECalE_5MeV = Histograms["At5MeV"].GetMean() * Histograms["At5MeV"].GetEntries() * ECal_coeff;
+        //_ECalE = TotalEnergy;
         _ECalPosV[0] = ECalXRMS;
         _ECalPosV[1] = ECalYRMS;
         _ECalPosV[2] = ECalZRMS;

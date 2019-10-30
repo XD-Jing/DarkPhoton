@@ -3,6 +3,18 @@
 ###
 source /home/zhangyulei/utility.sh
 
+
+# DIR="$( cd "$( dirname "${BASH_SOURCE[1]}" )" >/dev/null 2>&1 && pwd )"
+# echo $DIR $PWD $(dirname $(readlink -f $0))
+DIR=$(dirname $(readlink -f $0))
+
+function compile(){
+    currentDir=$(pwd);
+    cd ${DIR}/DarkPhoton/build;
+    make;
+    cd ${currentDir};
+}
+
 printf "${BBlue}=%0.s" $( seq 1 30 )
 printf "\n%25s%15s\n" "Dark Photon Simulation" " "
 printf "%20s%15s\n" "@ INPAC && TDLI" " "
