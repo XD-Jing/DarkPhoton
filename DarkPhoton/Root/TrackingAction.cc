@@ -83,7 +83,9 @@ void TrackingAction::PostUserTrackingAction(const G4Track* aTrack)
                        fMC->GetMomentum()[2]*fMC->GetMomentum()[2]);
 
     if (  fMC->Getid() == 1 || pm > 0.1*MeV
-       || abs(fMC->GetPDG()) == 13 ) froot->FillMC(id,fMC);
+       || abs(fMC->GetPDG()) == 13 ){
+        //froot->FillMC(id,fMC);
+    }
 
     if(aTrack->GetTrackID() == 1) {
         //G4cout<< " " << G4endl;

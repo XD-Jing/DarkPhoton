@@ -35,7 +35,7 @@ class RootManager {
         void SetStartID(int id) { fStart = id; };
         void SetNbEvent(int id) { fEvtNb = id; };
 
-        void FillTree(Int_t    EventID, 
+        void FillTree(int    EventID, 
                       Double_t* Rndm,
                       TrackerHitsCollection* tagHC,
                       TrackerHitsCollection* recHC,
@@ -45,8 +45,8 @@ class RootManager {
                       CalorHitsCollection* 
                      );
 
-        void FillEG(Int_t EventID, MCParticle*, MCParticle* );
-        void FillMC(Int_t EventID, MCParticle* );
+        void FillEG(int EventID, MCParticle*, MCParticle* );
+        void FillMC(int EventID, MCParticle* );
 
 
     private:
@@ -56,86 +56,86 @@ class RootManager {
         TTree*      tmc;
         TTree*      te;
 
-        Int_t       fStart;
-        Int_t       fEvtNb;
+        int       fStart;
+        int       fEvtNb;
 
-        Int_t       EventID;
-        Double_t    Rndm[4];
+        int       EventID;
+        float    Rndm[4];
 
         // MCParticle
-        Int_t           _id;
-        Int_t           _PDG;
-        Int_t           _ParentID;
-        Double_t        _Energy;
-        Double_t        _Momentum[3];
-        Double_t        _VPos[3]; // vertex position
-        Double_t        _EPos[3]; // end position
+        int           _id;
+        int           _PDG;
+        int           _ParentID;
+        float        _Energy;
+        float        _Momentum[3];
+        float        _VPos[3]; // vertex position
+        float        _EPos[3]; // end position
         char            _CreateProcess[20];
 
-        Int_t           eid;
-        Int_t           ePDG;
-        Int_t           eParentID;
-        Double_t        eEnergy;
-        Double_t        eMomentum[3];
-        Double_t        eVPos[3]; // vertex position
-        Double_t        eEPos[3]; // end position
+        int           eid;
+        int           ePDG;
+        int           eParentID;
+        float        eEnergy;
+        float        eMomentum[3];
+        float        eVPos[3]; // vertex position
+        float        eEPos[3]; // end position
         char            eCreateProcess[20];
 
         // Electron 
-        Int_t           mc_id;
-        Int_t           mc_PDG;
-        Int_t           mc_ParentID;
-        Double_t        mc_Energy;
-        Double_t        mc_Momentum[3];
-        Double_t        mc_Pos[3]; // position
+        int           mc_id;
+        int           mc_PDG;
+        int           mc_ParentID;
+        float        mc_Energy;
+        float        mc_Momentum[3];
+        float        mc_Pos[3]; // position
         char            mc_CreateProcess[20];
 
         // Hit Collections
-        Int_t       Nb_tagTrk;
-        Int_t       tTrkID[MaxHits];
-        Int_t       tTrkChamNb[MaxHits];
-        Double_t    tTrkTime[MaxHits];
-        Double_t    tTrkE[MaxHits];
-        Double_t    tTrkPosX[MaxHits];    
-        Double_t    tTrkPosY[MaxHits];    
-        Double_t    tTrkPosZ[MaxHits];    
+        int       Nb_tagTrk;
+        int       tTrkID[MaxHits];
+        int       tTrkChamNb[MaxHits];
+        float    tTrkTime[MaxHits];
+        float    tTrkE[MaxHits];
+        float    tTrkPosX[MaxHits];    
+        float    tTrkPosY[MaxHits];    
+        float    tTrkPosZ[MaxHits];    
 
-        Int_t       Nb_recTrk;
-        Int_t       rTrkID[MaxHits];
-        Int_t       rTrkChamNb[MaxHits];
-        Double_t    rTrkTime[MaxHits];
-        Double_t    rTrkE[MaxHits];
-        Double_t    rTrkPosX[MaxHits];    
-        Double_t    rTrkPosY[MaxHits];    
-        Double_t    rTrkPosZ[MaxHits];    
+        int       Nb_recTrk;
+        int       rTrkID[MaxHits];
+        int       rTrkChamNb[MaxHits];
+        float    rTrkTime[MaxHits];
+        float    rTrkE[MaxHits];
+        float    rTrkPosX[MaxHits];    
+        float    rTrkPosY[MaxHits];    
+        float    rTrkPosZ[MaxHits];    
 
-        Int_t       Nb_ECal;
-        Double_t    ECalTime[MaxHits];
-        Double_t    ECalE[MaxHits];
-        Double_t    ECalPosX[MaxHits];    
-        Double_t    ECalPosY[MaxHits];    
-        Double_t    ECalPosZ[MaxHits];    
+        int       Nb_ECal;
+        float    ECalTime[MaxHits];
+        float    ECalE[MaxHits];
+        float    ECalPosX[MaxHits];    
+        float    ECalPosY[MaxHits];    
+        float    ECalPosZ[MaxHits];    
 
-        Int_t       Nb_HCal;
-        Double_t    HCalTime[MaxHits];
-        Double_t    HCalE[MaxHits];
-        Double_t    HCalPosX[MaxHits];    
-        Double_t    HCalPosY[MaxHits];    
-        Double_t    HCalPosZ[MaxHits];    
+        int       Nb_HCal;
+        float    HCalTime[MaxHits];
+        float    HCalE[MaxHits];
+        float    HCalPosX[MaxHits];    
+        float    HCalPosY[MaxHits];    
+        float    HCalPosZ[MaxHits];    
 
-        Int_t       Nb_HCap;
-        Double_t    HCapTime[MaxHits];
-        Double_t    HCapE[MaxHits];
-        Double_t    HCapPosX[MaxHits];    
-        Double_t    HCapPosY[MaxHits];    
-        Double_t    HCapPosZ[MaxHits];    
+        int       Nb_HCap;
+        float    HCapTime[MaxHits];
+        float    HCapE[MaxHits];
+        float    HCapPosX[MaxHits];    
+        float    HCapPosY[MaxHits];    
+        float    HCapPosZ[MaxHits];    
 
-        Int_t       Nb_HSide;
-        Double_t    HSideTime[MaxHits];
-        Double_t    HSideE[MaxHits];
-        Double_t    HSidePosX[MaxHits];    
-        Double_t    HSidePosY[MaxHits];    
-        Double_t    HSidePosZ[MaxHits];    
+        int       Nb_HSide;
+        float    HSideTime[MaxHits];
+        float    HSideE[MaxHits];
+        float    HSidePosX[MaxHits];    
+        float    HSidePosY[MaxHits];    
+        float    HSidePosZ[MaxHits];    
 
 };
 

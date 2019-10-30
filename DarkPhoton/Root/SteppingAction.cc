@@ -98,7 +98,7 @@ void SteppingAction::UserSteppingAction(const G4Step* aStep)
 
             // selection criteria
             if(gamma->GetEnergy() > 4.0*GeV) {
-                froot->FillEG(id, gamma, p);
+                //froot->FillEG(id, gamma, p);
                 if_select = true;
             }
         }

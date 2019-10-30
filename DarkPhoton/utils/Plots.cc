@@ -3,6 +3,7 @@
 #include <TFile.h>
 #include <TTree.h>
 #include <TH1F.h>
+#include <TH2F.h>
 #include <TChain.h>
 #include <TCanvas.h>
 #include <TStyle.h>
@@ -12,6 +13,7 @@ int main(){
     TChain* ch = new TChain("treeANA");
     for (int i=0;i<=99; i++) ch->Add(("job"+std::to_string(i)+"/dp_ana.root").c_str());
     TCanvas* c = new TCanvas("c", "c", 800, 800);
+    c->Print("dp.pdf[");
     gStyle->SetOptStat(0);
     
     std::map<std::string, TH1F> ECal;
@@ -62,8 +64,16 @@ int main(){
     l->Draw();
 
     gPad->SetLeftMargin(0.15);
+    c->Print("dp.pdf");
 
-    c->Print("a.pdf");
-
+    c->cd();
+    TH2F* h2 = new TH2F("h2", "h2", 1000, 0, 10, 1000, 0, 10);
+    ch->Draw("ECalE/1000:HCalE/1000>>h2");
+    h2->Draw();
+    h2->SetTitle("");
+    h2->GetXaxis()->SetTitle("Energy in HCal [GeV]");
+    h2->GetYaxis()->SetTitle("Energy in ECal [GeV]");
+    c->Print("dp.pdf");
+    c->Print("dp.pdf]");
     return 0;
 }

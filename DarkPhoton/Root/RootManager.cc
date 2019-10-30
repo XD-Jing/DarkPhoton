@@ -114,85 +114,87 @@ void RootManager::book(G4String fileName)
         return;
     }
 
-    tr = new TTree("treeDP","Dark Photon");
-    tmc= new TTree("treeEGamma","Electron Gamma");
-    te = new TTree("treeMC","MC");
+    tr = new TTree("treeDP","Dark_Photon");
+    /*
+    tmc= new TTree("treeEG","Dark_Photon");
+    te = new TTree("treeMC","Dark_Photon");
 
     tmc->Branch("EventID",      &EventID    ,   "EventID/I");
     tmc->Branch("_id",          &_id        ,   "_id/I");
     tmc->Branch("_PDG",         &_PDG       ,   "_PDG/I");
     tmc->Branch("_ParentID",    &_ParentID  ,   "_ParentID/I");
-    tmc->Branch("_Energy",      &_Energy    ,   "_Energy/D");
-    tmc->Branch("_Momentum",    &_Momentum  ,   "_Momentum[3]/D");
-    tmc->Branch("_VPos",        &_VPos      ,   "_VPos[3]/D");
-    tmc->Branch("_EPos",        &_EPos      ,   "_EPos[3]/D");
+    tmc->Branch("_Energy",      &_Energy    ,   "_Energy/F");
+    tmc->Branch("_Momentum",    &_Momentum  ,   "_Momentum[3]/F");
+    tmc->Branch("_VPos",        &_VPos      ,   "_VPos[3]/F");
+    tmc->Branch("_EPos",        &_EPos      ,   "_EPos[3]/F");
     tmc->Branch("_CrePro",      &_CreateProcess,"_CrePro[20]/C");
     tmc->Branch("eid",          &eid        ,   "eid/I");
     tmc->Branch("ePDG",         &ePDG       ,   "ePDG/I");
     tmc->Branch("eParentID",    &eParentID  ,   "eParentID/I");
-    tmc->Branch("eEnergy",      &eEnergy    ,   "eEnergy/D");
-    tmc->Branch("eMomentum",    &eMomentum  ,   "eMomentum[3]/D");
-    tmc->Branch("eVPos",        &eVPos      ,   "eVPos[3]/D");
-    tmc->Branch("eEPos",        &eEPos      ,   "eEPos[3]/D");
+    tmc->Branch("eEnergy",      &eEnergy    ,   "eEnergy/F");
+    tmc->Branch("eMomentum",    &eMomentum  ,   "eMomentum[3]/F");
+    tmc->Branch("eVPos",        &eVPos      ,   "eVPos[3]/F");
+    tmc->Branch("eEPos",        &eEPos      ,   "eEPos[3]/F");
     tmc->Branch("eCrePro",      &eCreateProcess,"eCrePro[20]/C");
 
     te->Branch("id",            &mc_id        , "id/I");
     te->Branch("PDG",           &mc_PDG       , "PDG/I");
     te->Branch("ParentID",      &mc_ParentID  , "ParentID/I");
     te->Branch("EventID",       &EventID    ,   "EventID/I");
-    te->Branch("Energy",        &mc_Energy   ,   "Energy/D");
-    te->Branch("Momentum",      &mc_Momentum ,   "Momentum[3]/D");
-    te->Branch("Position",      &mc_Pos      ,   "Position[3]/D");
+    te->Branch("Energy",        &mc_Energy   ,   "Energy/F");
+    te->Branch("Momentum",      &mc_Momentum ,   "Momentum[3]/F");
+    te->Branch("Position",      &mc_Pos      ,   "Position[3]/F");
     te->Branch("CreProc" ,      &mc_CreateProcess,"CreProc[20]/C");
+    */
 
     tr->Branch("EventID",       &EventID    ,   "EventID/I");
-    tr->Branch("Rndm",          &Rndm       ,   "Rndm[4]/D");
+    tr->Branch("Rndm",          &Rndm       ,   "Rndm[4]/F");
 
     tr->Branch("Nb_tagTrk",     &Nb_tagTrk  ,   "Nb_tagTrk/I");
     tr->Branch("tTrkID",         &tTrkID    ,   "tTrkID[Nb_tagTrk]/I");
     tr->Branch("tChamberNb",     &tTrkChamNb,   "tChamberNb[Nb_tagTrk]/I");
-    tr->Branch("tTrkE",          &tTrkE     ,   "tTrkE[Nb_tagTrk]/D");
-    tr->Branch("tTrkTime",       &tTrkTime  ,   "tTrkTime[Nb_tagTrk]/D");
-    tr->Branch("tTrkPosX",       &tTrkPosX  ,   "tTrkPosX[Nb_tagTrk]/D");
-    tr->Branch("tTrkPosY",       &tTrkPosY  ,   "tTrkPosY[Nb_tagTrk]/D");
-    tr->Branch("tTrkPosZ",       &tTrkPosZ  ,   "tTrkPosZ[Nb_tagTrk]/D");
+    tr->Branch("tTrkE",          &tTrkE     ,   "tTrkE[Nb_tagTrk]/F");
+    tr->Branch("tTrkTime",       &tTrkTime  ,   "tTrkTime[Nb_tagTrk]/F");
+    tr->Branch("tTrkPosX",       &tTrkPosX  ,   "tTrkPosX[Nb_tagTrk]/F");
+    tr->Branch("tTrkPosY",       &tTrkPosY  ,   "tTrkPosY[Nb_tagTrk]/F");
+    tr->Branch("tTrkPosZ",       &tTrkPosZ  ,   "tTrkPosZ[Nb_tagTrk]/F");
 
     tr->Branch("Nb_recTrk",     &Nb_recTrk  ,   "Nb_recTrk/I");
     tr->Branch("rTrkID",         &rTrkID    ,   "rTrkID[Nb_recTrk]/I");
     tr->Branch("rChamberNb",     &rTrkChamNb,   "rChamberNb[Nb_recTrk]/I");
-    tr->Branch("rTrkTime",       &rTrkTime  ,   "rTrkTime[Nb_recTrk]/D");
-    tr->Branch("rTrkE",          &rTrkE     ,   "rTrkE[Nb_recTrk]/D");
-    tr->Branch("rTrkPosX",       &rTrkPosX  ,   "rTrkPosX[Nb_recTrk]/D");
-    tr->Branch("rTrkPosY",       &rTrkPosY  ,   "rTrkPosY[Nb_recTrk]/D");
-    tr->Branch("rTrkPosZ",       &rTrkPosZ  ,   "rTrkPosZ[Nb_recTrk]/D");
+    tr->Branch("rTrkTime",       &rTrkTime  ,   "rTrkTime[Nb_recTrk]/F");
+    tr->Branch("rTrkE",          &rTrkE     ,   "rTrkE[Nb_recTrk]/F");
+    tr->Branch("rTrkPosX",       &rTrkPosX  ,   "rTrkPosX[Nb_recTrk]/F");
+    tr->Branch("rTrkPosY",       &rTrkPosY  ,   "rTrkPosY[Nb_recTrk]/F");
+    tr->Branch("rTrkPosZ",       &rTrkPosZ  ,   "rTrkPosZ[Nb_recTrk]/F");
 
-    tr->Branch("Nb_ECal",        &Nb_ECal   ,   "Nb_ECal/I");
-    tr->Branch("ECalE",          &ECalE     ,   "ECalE[Nb_ECal]/D");
-    tr->Branch("ECalTime",       &ECalTime  ,   "ECalTime[Nb_ECal]/D");
-    tr->Branch("ECalPosX",       &ECalPosX  ,   "ECalPosX[Nb_ECal]/D");
-    tr->Branch("ECalPosY",       &ECalPosY  ,   "ECalPosY[Nb_ECal]/D");
-    tr->Branch("ECalPosZ",       &ECalPosZ  ,   "ECalPosZ[Nb_ECal]/D");
+    tr->Branch("Nb_ECal",       &Nb_ECal    ,   "Nb_ECal/I");
+    tr->Branch("ECalE",          &ECalE     ,   "ECalE[Nb_ECal]/F");
+    tr->Branch("ECalTime",       &ECalTime  ,   "ECalTime[Nb_ECal]/F");
+    tr->Branch("ECalPosX",       &ECalPosX  ,   "ECalPosX[Nb_ECal]/F");
+    tr->Branch("ECalPosY",       &ECalPosY  ,   "ECalPosY[Nb_ECal]/F");
+    tr->Branch("ECalPosZ",       &ECalPosZ  ,   "ECalPosZ[Nb_ECal]/F");
 
     tr->Branch("Nb_HCal",       &Nb_HCal    ,   "Nb_HCal/I");
-    tr->Branch("HCalE",          &HCalE     ,   "HCalE[Nb_HCal]/D");
-    tr->Branch("HCalTime",       &HCalTime  ,   "HCalTime[Nb_HCal]/D");
-    tr->Branch("HCalPosX",       &HCalPosX  ,   "HCalPosX[Nb_HCal]/D");
-    tr->Branch("HCalPosY",       &HCalPosY  ,   "HCalPosY[Nb_HCal]/D");
-    tr->Branch("HCalPosZ",       &HCalPosZ  ,   "HCalPosZ[Nb_HCal]/D");
+    tr->Branch("HCalE",          &HCalE     ,   "HCalE[Nb_HCal]/F");
+    tr->Branch("HCalTime",       &HCalTime  ,   "HCalTime[Nb_HCal]/F");
+    tr->Branch("HCalPosX",       &HCalPosX  ,   "HCalPosX[Nb_HCal]/F");
+    tr->Branch("HCalPosY",       &HCalPosY  ,   "HCalPosY[Nb_HCal]/F");
+    tr->Branch("HCalPosZ",       &HCalPosZ  ,   "HCalPosZ[Nb_HCal]/F");
 
     tr->Branch("Nb_HCap",       &Nb_HCap    ,   "Nb_HCap/I");
-    tr->Branch("HCapE",          &HCapE     ,   "HCapE[Nb_HCap]/D");
-    tr->Branch("HCapTime",       &HCapTime  ,   "HCapTime[Nb_HCap]/D");
-    tr->Branch("HCapPosX",       &HCapPosX  ,   "HCapPosX[Nb_HCap]/D");
-    tr->Branch("HCapPosY",       &HCapPosY  ,   "HCapPosY[Nb_HCap]/D");
-    tr->Branch("HCapPosZ",       &HCapPosZ  ,   "HCapPosZ[Nb_HCap]/D");
+    tr->Branch("HCapE",          &HCapE     ,   "HCapE[Nb_HCap]/F");
+    tr->Branch("HCapTime",       &HCapTime  ,   "HCapTime[Nb_HCap]/F");
+    tr->Branch("HCapPosX",       &HCapPosX  ,   "HCapPosX[Nb_HCap]/F");
+    tr->Branch("HCapPosY",       &HCapPosY  ,   "HCapPosY[Nb_HCap]/F");
+    tr->Branch("HCapPosZ",       &HCapPosZ  ,   "HCapPosZ[Nb_HCap]/F");
 
     tr->Branch("Nb_HSide",       &Nb_HSide    ,   "Nb_HSide/I");
-    tr->Branch("HSideE",          &HSideE     ,   "HSideE[Nb_HSide]/D");
-    tr->Branch("HSideTime",       &HSideTime  ,   "HSideTime[Nb_HSide]/D");
-    tr->Branch("HSidePosX",       &HSidePosX  ,   "HSidePosX[Nb_HSide]/D");
-    tr->Branch("HSidePosY",       &HSidePosY  ,   "HSidePosY[Nb_HSide]/D");
-    tr->Branch("HSidePosZ",       &HSidePosZ  ,   "HSidePosZ[Nb_HSide]/D");
+    tr->Branch("HSideE",          &HSideE     ,   "HSideE[Nb_HSide]/F");
+    tr->Branch("HSideTime",       &HSideTime  ,   "HSideTime[Nb_HSide]/F");
+    tr->Branch("HSidePosX",       &HSidePosX  ,   "HSidePosX[Nb_HSide]/F");
+    tr->Branch("HSidePosY",       &HSidePosY  ,   "HSidePosY[Nb_HSide]/F");
+    tr->Branch("HSidePosZ",       &HSidePosZ  ,   "HSidePosZ[Nb_HSide]/F");
 
 
     G4cout << "===> ROOT file is opened in " << fileName << G4endl;
@@ -204,8 +206,8 @@ void RootManager::save()
 {
     if (rootFile) {
         rootFile->WriteTObject(tr,"","Overwrite");
-        rootFile->WriteTObject(tmc,"","Overwrite");
-        rootFile->WriteTObject(te,"","Overwrite");
+        //rootFile->WriteTObject(tmc,"","Overwrite");
+        //rootFile->WriteTObject(te,"","Overwrite");
         rootFile->Close();
         G4cout << "===> Simulation Tree is saved \n" << G4endl;
     }
@@ -213,7 +215,7 @@ void RootManager::save()
 
 //....ooooo0ooooo........ooooo0ooooo........ooooo0ooooo........ooooo0ooooo......
 
-void RootManager::FillEG(Int_t ID, MCParticle* mc, MCParticle* mce) {
+void RootManager::FillEG(int ID, MCParticle* mc, MCParticle* mce) {
 
     EventID     = ID + fEvtNb*fStart ;
     _id         = mc->Getid()        ;
@@ -245,7 +247,7 @@ void RootManager::FillEG(Int_t ID, MCParticle* mc, MCParticle* mce) {
 
 //....ooooo0ooooo........ooooo0ooooo........ooooo0ooooo........ooooo0ooooo......
 
-void RootManager::FillMC(Int_t ID, MCParticle* mc) {
+void RootManager::FillMC(int ID, MCParticle* mc) {
 
     EventID     = ID + fEvtNb*fStart ;
     mc_id         = mc->Getid()        ;
@@ -266,7 +268,7 @@ void RootManager::FillMC(Int_t ID, MCParticle* mc) {
 
 //....ooooo0ooooo........ooooo0ooooo........ooooo0ooooo........ooooo0ooooo......
 
-void RootManager::FillTree(Int_t ID, 
+void RootManager::FillTree(int ID, 
         Double_t* Rnd,
         TrackerHitsCollection* tagHC,
         TrackerHitsCollection* recHC,
@@ -349,6 +351,7 @@ void RootManager::FillTree(Int_t ID,
     }
 
     tr->Fill();
+    
 }
 
 
