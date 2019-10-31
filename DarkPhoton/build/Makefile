@@ -195,6 +195,63 @@ simu/fast:
 	$(MAKE) -f CMakeFiles/simu.dir/build.make CMakeFiles/simu.dir/build
 .PHONY : simu/fast
 
+Root/AtlasStyle.o: Root/AtlasStyle.cc.o
+
+.PHONY : Root/AtlasStyle.o
+
+# target to build an object file
+Root/AtlasStyle.cc.o:
+	$(MAKE) -f CMakeFiles/Plots.dir/build.make CMakeFiles/Plots.dir/Root/AtlasStyle.cc.o
+	$(MAKE) -f CMakeFiles/simu.dir/build.make CMakeFiles/simu.dir/Root/AtlasStyle.cc.o
+.PHONY : Root/AtlasStyle.cc.o
+
+Root/AtlasStyle.i: Root/AtlasStyle.cc.i
+
+.PHONY : Root/AtlasStyle.i
+
+# target to preprocess a source file
+Root/AtlasStyle.cc.i:
+	$(MAKE) -f CMakeFiles/Plots.dir/build.make CMakeFiles/Plots.dir/Root/AtlasStyle.cc.i
+	$(MAKE) -f CMakeFiles/simu.dir/build.make CMakeFiles/simu.dir/Root/AtlasStyle.cc.i
+.PHONY : Root/AtlasStyle.cc.i
+
+Root/AtlasStyle.s: Root/AtlasStyle.cc.s
+
+.PHONY : Root/AtlasStyle.s
+
+# target to generate assembly for a file
+Root/AtlasStyle.cc.s:
+	$(MAKE) -f CMakeFiles/Plots.dir/build.make CMakeFiles/Plots.dir/Root/AtlasStyle.cc.s
+	$(MAKE) -f CMakeFiles/simu.dir/build.make CMakeFiles/simu.dir/Root/AtlasStyle.cc.s
+.PHONY : Root/AtlasStyle.cc.s
+
+Root/AtlasUtils.o: Root/AtlasUtils.cc.o
+
+.PHONY : Root/AtlasUtils.o
+
+# target to build an object file
+Root/AtlasUtils.cc.o:
+	$(MAKE) -f CMakeFiles/simu.dir/build.make CMakeFiles/simu.dir/Root/AtlasUtils.cc.o
+.PHONY : Root/AtlasUtils.cc.o
+
+Root/AtlasUtils.i: Root/AtlasUtils.cc.i
+
+.PHONY : Root/AtlasUtils.i
+
+# target to preprocess a source file
+Root/AtlasUtils.cc.i:
+	$(MAKE) -f CMakeFiles/simu.dir/build.make CMakeFiles/simu.dir/Root/AtlasUtils.cc.i
+.PHONY : Root/AtlasUtils.cc.i
+
+Root/AtlasUtils.s: Root/AtlasUtils.cc.s
+
+.PHONY : Root/AtlasUtils.s
+
+# target to generate assembly for a file
+Root/AtlasUtils.cc.s:
+	$(MAKE) -f CMakeFiles/simu.dir/build.make CMakeFiles/simu.dir/Root/AtlasUtils.cc.s
+.PHONY : Root/AtlasUtils.cc.s
+
 Root/CalorHit.o: Root/CalorHit.cc.o
 
 .PHONY : Root/CalorHit.o
@@ -942,6 +999,12 @@ help:
 	@echo "... SlimROOT"
 	@echo "... Plots"
 	@echo "... simu"
+	@echo "... Root/AtlasStyle.o"
+	@echo "... Root/AtlasStyle.i"
+	@echo "... Root/AtlasStyle.s"
+	@echo "... Root/AtlasUtils.o"
+	@echo "... Root/AtlasUtils.i"
+	@echo "... Root/AtlasUtils.s"
 	@echo "... Root/CalorHit.o"
 	@echo "... Root/CalorHit.i"
 	@echo "... Root/CalorHit.s"

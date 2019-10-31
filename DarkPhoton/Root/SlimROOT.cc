@@ -14,9 +14,9 @@ const int modu = 1e4;
 const double clight = 299.792;  // mm/ns
 using namespace std;
 
-Double_t CalcRadius( Double_t x1, Double_t y1,
-                     Double_t x2, Double_t y2,
-                     Double_t x3, Double_t y3);
+float CalcRadius( float x1, float y1,
+                     float x2, float y2,
+                     float x3, float y3);
 
 void SlimROOT::Loop()
 {
@@ -28,44 +28,44 @@ void SlimROOT::Loop()
     
     // Register vaiables
     Int_t       _EventID    ;
-    Double_t    _Rndm[4]    ;
-    Double_t    _Pi[5]      ;
-    Double_t    _Pf[4]      ;
-    Double_t    _ECalE      ;
-    //Double_t    _ECalE_0    ;
-    Double_t    _ECalE_0p1MeV;
-    Double_t    _ECalE_0p5MeV;
-    Double_t    _ECalE_1MeV ;
-    Double_t    _ECalE_2MeV ;
-    Double_t    _ECalE_3MeV ;
-    Double_t    _ECalE_4MeV ;
-    Double_t    _ECalE_5MeV ;
+    float    _Rndm[4]    ;
+    float    _Pi[5]      ;
+    float    _Pf[4]      ;
+    float    _ECalE      ;
+    //float    _ECalE_0    ;
+    float    _ECalE_0p1MeV;
+    float    _ECalE_0p5MeV;
+    float    _ECalE_1MeV ;
+    float    _ECalE_2MeV ;
+    float    _ECalE_3MeV ;
+    float    _ECalE_4MeV ;
+    float    _ECalE_5MeV ;
     Int_t       _Nb_ECal    ;
-    Double_t    _ECalPosV[3]; // the variance along x,y,z respectively
-    Double_t    _ECalPosX[1500];
-    Double_t    _ECalPosY[1500];
-    Double_t    _HCalE      ;
-    Double_t    _HCalPosV[3]; // the variance along x,y,z respectively
+    float    _ECalPosV[3]; // the variance along x,y,z respectively
+    float    _ECalPosX[1500];
+    float    _ECalPosY[1500];
+    float    _HCalE      ;
+    float    _HCalPosV[3]; // the variance along x,y,z respectively
     
     tout->Branch("EventID"      , &_EventID     , "EventID/I")      ;
-    tout->Branch("Pi"           , &_Pi          , "Pi[5]/D")  ;
-    tout->Branch("Pf"           , &_Pf          , "Pf[4]/D")  ;
-    tout->Branch("Rndm"         , &_Rndm        , "Rndm[4]/D") ;
-    tout->Branch("ECalE"        , &_ECalE       , "ECalE/D")        ;
-    //tout->Branch("ECalE0"        , &_ECalE_0       , "ECalE0/D")        ;
-    tout->Branch("ECalE0p1"     , &_ECalE_0p1MeV, "ECalE_0p1MeV/D")        ;
-    tout->Branch("ECalE0p5"     , &_ECalE_0p5MeV, "ECalE_0p5MeV/D")        ;
-    tout->Branch("ECalE1"       , &_ECalE_1MeV  , "ECalE_1MeV/D")        ;
-    tout->Branch("ECalE2"       , &_ECalE_2MeV  , "ECalE_2MeV/D")        ;
-    tout->Branch("ECalE3"       , &_ECalE_3MeV  , "ECalE_3MeV/D")        ;
-    tout->Branch("ECalE4"       , &_ECalE_4MeV  , "ECalE_4MeV/D")        ;
-    tout->Branch("ECalE5"       , &_ECalE_5MeV  , "ECalE_5MeV/D")        ;
+    tout->Branch("Pi"           , &_Pi          , "Pi[5]/F")  ;
+    tout->Branch("Pf"           , &_Pf          , "Pf[4]/F")  ;
+    tout->Branch("Rndm"         , &_Rndm        , "Rndm[4]/F") ;
+    tout->Branch("ECalE"        , &_ECalE       , "ECalE/F")        ;
+    //tout->Branch("ECalE0"        , &_ECalE_0       , "ECalE0/F")        ;
+    tout->Branch("ECalE0p1"     , &_ECalE_0p1MeV, "ECalE_0p1MeV/F")        ;
+    tout->Branch("ECalE0p5"     , &_ECalE_0p5MeV, "ECalE_0p5MeV/F")        ;
+    tout->Branch("ECalE1"       , &_ECalE_1MeV  , "ECalE_1MeV/F")        ;
+    tout->Branch("ECalE2"       , &_ECalE_2MeV  , "ECalE_2MeV/F")        ;
+    tout->Branch("ECalE3"       , &_ECalE_3MeV  , "ECalE_3MeV/F")        ;
+    tout->Branch("ECalE4"       , &_ECalE_4MeV  , "ECalE_4MeV/F")        ;
+    tout->Branch("ECalE5"       , &_ECalE_5MeV  , "ECalE_5MeV/F")        ;
     tout->Branch("Nb_ECal"      , &_Nb_ECal     , "Nb_ECal/I")        ;
-    tout->Branch("ECalPosV"     , &_ECalPosV    , "ECalPosV[3]/D")  ;
-    tout->Branch("ECalPosX"     , &_ECalPosX    , "ECalPosX[Nb_ECal]/D")  ;
-    tout->Branch("ECalPosY"     , &_ECalPosY    , "ECalPosY[Nb_ECal]/D")  ;
-    tout->Branch("HCalE"        , &_HCalE       , "HCalE/D")        ;
-    tout->Branch("HCalPosV"     , &_HCalPosV    , "HCalPosV[3]/D")  ;
+    tout->Branch("ECalPosV"     , &_ECalPosV    , "ECalPosV[3]/F")  ;
+    tout->Branch("ECalPosX"     , &_ECalPosX    , "ECalPosX[Nb_ECal]/F")  ;
+    tout->Branch("ECalPosY"     , &_ECalPosY    , "ECalPosY[Nb_ECal]/F")  ;
+    tout->Branch("HCalE"        , &_HCalE       , "HCalE/F")        ;
+    tout->Branch("HCalPosV"     , &_HCalPosV    , "HCalPosV[3]/F")  ;
 
     
     if (fChain == 0) return;
@@ -105,11 +105,11 @@ void SlimROOT::Loop()
 
         for(int i=1; i<ntTrk-1; i++) {
             if( ntTrk<2 ) break;
-            Double_t r  = CalcRadius( tTrkPosY[ tTrkIdx[i-1] ]*rnd.Gaus(1,0.025), tTrkPosZ[ tTrkIdx[i-1] ]*rnd.Gaus(1,0.025),
+            float r  = CalcRadius( tTrkPosY[ tTrkIdx[i-1] ]*rnd.Gaus(1,0.025), tTrkPosZ[ tTrkIdx[i-1] ]*rnd.Gaus(1,0.025),
                                       tTrkPosY[ tTrkIdx[i  ] ]*rnd.Gaus(1,0.025), tTrkPosZ[ tTrkIdx[i  ] ]*rnd.Gaus(1,0.025),
                                       tTrkPosY[ tTrkIdx[i+1] ]*rnd.Gaus(1,0.025), tTrkPosZ[ tTrkIdx[i+1] ]*rnd.Gaus(1,0.025));
                     
-            Double_t pt = 0.3*3.0*r/1000;
+            float pt = 0.3*3.0*r/1000;
             //cout<<"     pt: "<< pt <<", r:"<<r<<", "<<tTrkIdx[i]<<endl;
             _Pi[i-1] = pt;
         }
@@ -129,11 +129,11 @@ void SlimROOT::Loop()
 
         for(int i=1; i<nrTrk-1; i++) {
             if( nrTrk<2 ) break;
-            Double_t r  = CalcRadius( rTrkPosY[ rTrkIdx[i-1] ]*rnd.Gaus(1,0.025), rTrkPosZ[ rTrkIdx[i-1] ]*rnd.Gaus(1,0.025),
+            float r  = CalcRadius( rTrkPosY[ rTrkIdx[i-1] ]*rnd.Gaus(1,0.025), rTrkPosZ[ rTrkIdx[i-1] ]*rnd.Gaus(1,0.025),
                                       rTrkPosY[ rTrkIdx[i  ] ]*rnd.Gaus(1,0.025), rTrkPosZ[ rTrkIdx[i  ] ]*rnd.Gaus(1,0.025),
                                       rTrkPosY[ rTrkIdx[i+1] ]*rnd.Gaus(1,0.025), rTrkPosZ[ rTrkIdx[i+1] ]*rnd.Gaus(1,0.025));
                     
-            Double_t pt = 0.3*1.5*r/1000;
+            float pt = 0.3*1.5*r/1000;
             //cout<<"     pt: "<< pt <<", r:"<<r<<", "<<rTrkIdx[i]<<endl;
             _Pf[i-1] = pt;
         }
@@ -174,10 +174,10 @@ void SlimROOT::Loop()
 
         }
 
-        Double_t TotalEnergy = hE->GetMean() * hE->GetEntries() * ECal_coeff;
-        Double_t ECalXRMS = hpx->GetRMS();
-        Double_t ECalYRMS = hpy->GetRMS();
-        Double_t ECalZRMS = hpz->GetRMS();
+        float TotalEnergy = hE->GetMean() * hE->GetEntries() * ECal_coeff;
+        float ECalXRMS = hpx->GetRMS();
+        float ECalYRMS = hpy->GetRMS();
+        float ECalZRMS = hpz->GetRMS();
 
         delete hE;
         delete hpx;
@@ -213,9 +213,9 @@ void SlimROOT::Loop()
         }
 
         TotalEnergy = hE->GetMean() * hE->GetEntries() * HCal_coeff;
-        Double_t HCalXRMS = hpx->GetRMS();
-        Double_t HCalYRMS = hpy->GetRMS();
-        Double_t HCalZRMS = hpz->GetRMS();
+        float HCalXRMS = hpx->GetRMS();
+        float HCalYRMS = hpy->GetRMS();
+        float HCalZRMS = hpz->GetRMS();
 
         delete hE;
         delete hpx;
@@ -244,15 +244,15 @@ void SlimROOT::Loop()
 
 // oooOooo...oooOooo...oooOooo...oooOooo...oooOooo...oooOooo...oooOooo...oooOooo...oooOooo...oooOooo...
 
-Double_t CalcRadius( Double_t x1, Double_t y1,
-                     Double_t x2, Double_t y2,
-                     Double_t x3, Double_t y3)
+float CalcRadius( float x1, float y1,
+                     float x2, float y2,
+                     float x3, float y3)
 {
-    Double_t r = 0;
-    Double_t A = x1*(y2-y3) - y1*(x2-x3) + x2*y3-x3*y2;
-    Double_t B = (x1*x1+y1*y1)*(y3-y2) + (x2*x2+y2*y2)*(y1-y3) + (x3*x3+y3*y3)*(y2-y1);
-    Double_t C = (x1*x1+y1*y1)*(x2-x3) + (x2*x2+y2*y2)*(x3-x1) + (x3*x3+y3*y3)*(x1-x2);
-    Double_t D = (x1*x1+y1*y1)*(x3*y2-x2*y3) + (x2*x2+y2*y2)*(x1*y3-x3*y1) + (x3*x3+y3*y3)*(x2*y1-x1*y2);
+    float r = 0;
+    float A = x1*(y2-y3) - y1*(x2-x3) + x2*y3-x3*y2;
+    float B = (x1*x1+y1*y1)*(y3-y2) + (x2*x2+y2*y2)*(y1-y3) + (x3*x3+y3*y3)*(y2-y1);
+    float C = (x1*x1+y1*y1)*(x2-x3) + (x2*x2+y2*y2)*(x3-x1) + (x3*x3+y3*y3)*(x1-x2);
+    float D = (x1*x1+y1*y1)*(x3*y2-x2*y3) + (x2*x2+y2*y2)*(x1*y3-x3*y1) + (x3*x3+y3*y3)*(x2*y1-x1*y2);
 
     if ( A != 0 ) r = sqrt( (B*B+C*C-4*A*D)/(4*A*A) );
     return r;

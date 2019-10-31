@@ -6,14 +6,15 @@ NumEvtPerJob=100000
 workdir=/home/lijing/DarkPhoton
 source ${workdir}/setup.sh
 
-mkdir -p ${workdir}/run/job${jobID}
+#mkdir -p ${workdir}/run/job${jobID}
 cd ${workdir}/run/job${jobID}
 
-cp /home/lijing/DarkPhoton/DarkPhoton/macros/example.in ./example.${jobID}
+#cp /home/lijing/DarkPhoton/DarkPhoton/macros/example.in ./example.${jobID}
+#
+#sed -i "s/ParaRndSed/$RANDOM/g" example.${jobID}
+#sed -i "s/ParaNumEvt/${NumEvtPerJob}/g" example.${jobID}
 
-sed -i "s/ParaRndSed/$RANDOM/g" example.${jobID}
-sed -i "s/ParaNumEvt/${NumEvtPerJob}/g" example.${jobID}
+#simu example.${jobID}
 
-simu example.${jobID}
-
+mv dp_ana.root dp_ana.root.bk
 SlimROOT

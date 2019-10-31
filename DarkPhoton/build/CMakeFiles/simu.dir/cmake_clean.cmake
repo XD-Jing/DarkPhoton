@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/simu.dir/utils/simu.cc.o"
+  "CMakeFiles/simu.dir/Root/AtlasStyle.cc.o"
+  "CMakeFiles/simu.dir/Root/AtlasUtils.cc.o"
   "CMakeFiles/simu.dir/Root/CalorHit.cc.o"
   "CMakeFiles/simu.dir/Root/CalorimeterSD.cc.o"
   "CMakeFiles/simu.dir/Root/ChamberParameterisation.cc.o"

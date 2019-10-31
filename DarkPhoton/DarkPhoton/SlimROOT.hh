@@ -16,47 +16,47 @@ public :
 
    // Declaration of leaf types
    Int_t           EventID;
-   Double_t        Rndm[4];
+   float        Rndm[4];
    Int_t           Nb_tagTrk;
    Int_t           tTrkID[1000];   //[Nb_tagTrk]
    Int_t           tChamberNb[1000];   //[Nb_tagTrk]
-   Double_t        tTrkE[1000];   //[Nb_tagTrk]
-   Double_t        tTrkTime[1000];   //[Nb_tagTrk]
-   Double_t        tTrkPosX[1000];   //[Nb_tagTrk]
-   Double_t        tTrkPosY[1000];   //[Nb_tagTrk]
-   Double_t        tTrkPosZ[1000];   //[Nb_tagTrk]
+   float        tTrkE[1000];   //[Nb_tagTrk]
+   float        tTrkTime[1000];   //[Nb_tagTrk]
+   float        tTrkPosX[1000];   //[Nb_tagTrk]
+   float        tTrkPosY[1000];   //[Nb_tagTrk]
+   float        tTrkPosZ[1000];   //[Nb_tagTrk]
    Int_t           Nb_recTrk;
    Int_t           rTrkID[5000];   //[Nb_recTrk]
    Int_t           rChamberNb[5000];   //[Nb_recTrk]
-   Double_t        rTrkTime[5000];   //[Nb_recTrk]
-   Double_t        rTrkE[5000];   //[Nb_recTrk]
-   Double_t        rTrkPosX[5000];   //[Nb_recTrk]
-   Double_t        rTrkPosY[5000];   //[Nb_recTrk]
-   Double_t        rTrkPosZ[5000];   //[Nb_recTrk]
+   float        rTrkTime[5000];   //[Nb_recTrk]
+   float        rTrkE[5000];   //[Nb_recTrk]
+   float        rTrkPosX[5000];   //[Nb_recTrk]
+   float        rTrkPosY[5000];   //[Nb_recTrk]
+   float        rTrkPosZ[5000];   //[Nb_recTrk]
    Int_t           Nb_ECal;
-   Double_t        ECalE[5000];   //[Nb_ECal]
-   Double_t        ECalTime[5000];   //[Nb_ECal]
-   Double_t        ECalPosX[5000];   //[Nb_ECal]
-   Double_t        ECalPosY[5000];   //[Nb_ECal]
-   Double_t        ECalPosZ[5000];   //[Nb_ECal]
+   float        ECalE[5000];   //[Nb_ECal]
+   float        ECalTime[5000];   //[Nb_ECal]
+   float        ECalPosX[5000];   //[Nb_ECal]
+   float        ECalPosY[5000];   //[Nb_ECal]
+   float        ECalPosZ[5000];   //[Nb_ECal]
    Int_t           Nb_HCal;
-   Double_t        HCalE[5000];   //[Nb_HCal]
-   Double_t        HCalTime[5000];   //[Nb_HCal]
-   Double_t        HCalPosX[5000];   //[Nb_HCal]
-   Double_t        HCalPosY[5000];   //[Nb_HCal]
-   Double_t        HCalPosZ[5000];   //[Nb_HCal]
+   float        HCalE[5000];   //[Nb_HCal]
+   float        HCalTime[5000];   //[Nb_HCal]
+   float        HCalPosX[5000];   //[Nb_HCal]
+   float        HCalPosY[5000];   //[Nb_HCal]
+   float        HCalPosZ[5000];   //[Nb_HCal]
    Int_t           Nb_HCap;
-   Double_t        HCapE[1000];   //[Nb_HCap]
-   Double_t        HCapTime[1000];   //[Nb_HCap]
-   Double_t        HCapPosX[1000];   //[Nb_HCap]
-   Double_t        HCapPosY[1000];   //[Nb_HCap]
-   Double_t        HCapPosZ[1000];   //[Nb_HCap]
+   float        HCapE[1000];   //[Nb_HCap]
+   float        HCapTime[1000];   //[Nb_HCap]
+   float        HCapPosX[1000];   //[Nb_HCap]
+   float        HCapPosY[1000];   //[Nb_HCap]
+   float        HCapPosZ[1000];   //[Nb_HCap]
    Int_t           Nb_HSide;
-   Double_t        HSideE[1000];   //[Nb_HSide]
-   Double_t        HSideTime[1000];   //[Nb_HSide]
-   Double_t        HSidePosX[1000];   //[Nb_HSide]
-   Double_t        HSidePosY[1000];   //[Nb_HSide]
-   Double_t        HSidePosZ[1000];   //[Nb_HSide]
+   float        HSideE[1000];   //[Nb_HSide]
+   float        HSideTime[1000];   //[Nb_HSide]
+   float        HSidePosX[1000];   //[Nb_HSide]
+   float        HSidePosY[1000];   //[Nb_HSide]
+   float        HSidePosZ[1000];   //[Nb_HSide]
 
    // List of branches
    TBranch        *b_EventID;   //!

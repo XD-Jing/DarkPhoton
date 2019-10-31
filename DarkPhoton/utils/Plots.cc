@@ -8,10 +8,13 @@
 #include <TCanvas.h>
 #include <TStyle.h>
 #include <TLegend.h>
+#include "AtlasStyle.hh"
 
 int main(){
+    //SetAtlasStyle();
     TChain* ch = new TChain("treeANA");
     for (int i=0;i<=99; i++) ch->Add(("job"+std::to_string(i)+"/dp_ana.root").c_str());
+    printf("total entries: %d\n", ch->GetEntries());
     TCanvas* c = new TCanvas("c", "c", 800, 800);
     c->Print("dp.pdf[");
     gStyle->SetOptStat(0);
@@ -50,7 +53,7 @@ int main(){
     ECal["C4MeV"].Draw("HIST SAME");
     ECal["C5MeV"].Draw("HIST SAME");
 
-    TLegend* l = new TLegend(0.7, 0.6, 0.9, 0.9);
+    TLegend* l = new TLegend(0.65, 0.6, 0.9, 0.9);
     l->SetBorderSize(0);
     l->SetFillStyle(0);
     l->AddEntry("noCut", "no cut", "l");
@@ -63,6 +66,8 @@ int main(){
     l->AddEntry("C5MeV", "cut @ 5 MeV", "l");
     l->Draw();
 
+    gStyle->SetLegendFont(42);
+    gStyle->SetLegendTextSize(0.03);
     gPad->SetLeftMargin(0.15);
     c->Print("dp.pdf");
 

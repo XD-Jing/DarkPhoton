@@ -68,10 +68,14 @@ file(GLOB headers ${PROJECT_SOURCE_DIR}/DarkPhoton/*.hh)
 # Add the executable, and link it to the Geant4 libraries
 #
 add_executable(simu utils/simu.cc ${sources} ${headers})
-add_executable(Plots utils/Plots.cc)
+add_executable(Plots utils/Plots.cc
+    ${PROJECT_SOURCE_DIR}/DarkPhoton/AtlasStyle.hh
+    ${PROJECT_SOURCE_DIR}/Root/AtlasStyle.cc
+    )
 add_executable(SlimROOT utils/SlimROOT.cc
     ${PROJECT_SOURCE_DIR}/DarkPhoton/SlimROOT.hh
-    ${PROJECT_SOURCE_DIR}/Root/SlimROOT.cc)
+    ${PROJECT_SOURCE_DIR}/Root/SlimROOT.cc
+    )
 
 target_link_libraries(simu ${Geant4_LIBRARIES}
                       ${HEPMC_LIBRARIES} ${HEPMC_FIO_LIBRARIES}

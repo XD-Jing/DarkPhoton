@@ -114,11 +114,8 @@ void RootManager::book(G4String fileName)
         return;
     }
 
-    tr = new TTree("treeDP","Dark_Photon");
-    /*
-    tmc= new TTree("treeEG","Dark_Photon");
-    te = new TTree("treeMC","Dark_Photon");
 
+    tmc= new TTree("treeEG","Dark_Photon");
     tmc->Branch("EventID",      &EventID    ,   "EventID/I");
     tmc->Branch("_id",          &_id        ,   "_id/I");
     tmc->Branch("_PDG",         &_PDG       ,   "_PDG/I");
@@ -137,6 +134,7 @@ void RootManager::book(G4String fileName)
     tmc->Branch("eEPos",        &eEPos      ,   "eEPos[3]/F");
     tmc->Branch("eCrePro",      &eCreateProcess,"eCrePro[20]/C");
 
+    te = new TTree("treeMC","Dark_Photon");
     te->Branch("id",            &mc_id        , "id/I");
     te->Branch("PDG",           &mc_PDG       , "PDG/I");
     te->Branch("ParentID",      &mc_ParentID  , "ParentID/I");
@@ -145,8 +143,8 @@ void RootManager::book(G4String fileName)
     te->Branch("Momentum",      &mc_Momentum ,   "Momentum[3]/F");
     te->Branch("Position",      &mc_Pos      ,   "Position[3]/F");
     te->Branch("CreProc" ,      &mc_CreateProcess,"CreProc[20]/C");
-    */
 
+    tr = new TTree("treeDP","Dark_Photon");
     tr->Branch("EventID",       &EventID    ,   "EventID/I");
     tr->Branch("Rndm",          &Rndm       ,   "Rndm[4]/F");
 
@@ -206,8 +204,8 @@ void RootManager::save()
 {
     if (rootFile) {
         rootFile->WriteTObject(tr,"","Overwrite");
-        //rootFile->WriteTObject(tmc,"","Overwrite");
-        //rootFile->WriteTObject(te,"","Overwrite");
+        rootFile->WriteTObject(tmc,"","Overwrite");
+        rootFile->WriteTObject(te,"","Overwrite");
         rootFile->Close();
         G4cout << "===> Simulation Tree is saved \n" << G4endl;
     }
@@ -215,7 +213,7 @@ void RootManager::save()
 
 //....ooooo0ooooo........ooooo0ooooo........ooooo0ooooo........ooooo0ooooo......
 
-void RootManager::FillEG(int ID, MCParticle* mc, MCParticle* mce) {
+void RootManager::FillEG(Int_t ID, MCParticle* mc, MCParticle* mce) {
 
     EventID     = ID + fEvtNb*fStart ;
     _id         = mc->Getid()        ;
@@ -247,7 +245,7 @@ void RootManager::FillEG(int ID, MCParticle* mc, MCParticle* mce) {
 
 //....ooooo0ooooo........ooooo0ooooo........ooooo0ooooo........ooooo0ooooo......
 
-void RootManager::FillMC(int ID, MCParticle* mc) {
+void RootManager::FillMC(Int_t ID, MCParticle* mc) {
 
     EventID     = ID + fEvtNb*fStart ;
     mc_id         = mc->Getid()        ;
@@ -268,7 +266,7 @@ void RootManager::FillMC(int ID, MCParticle* mc) {
 
 //....ooooo0ooooo........ooooo0ooooo........ooooo0ooooo........ooooo0ooooo......
 
-void RootManager::FillTree(int ID, 
+void RootManager::FillTree(Int_t ID, 
         Double_t* Rnd,
         TrackerHitsCollection* tagHC,
         TrackerHitsCollection* recHC,
